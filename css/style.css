@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Oswald:wght@200;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Oswald:wght@200;300;400;600;700&display=swap');
+/* CSS Variables */
+@import url(_variables.css);
+button {
+  background: none;
+  border: 2px solid rgb(144, 6, 161);
+  font-size: 18px;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s linear;
+  box-shadow: var(--box-shadow);
+  border-radius: 7px;
+}
+/* ! Start Header Area */
+.header-area .logo {
+  padding: 0 20px 5px 25px;
+}
+.header-area .main-menu .navbar {
+  padding: 1rem 20rem;
+}
+.header-area .main-menu .navbar-nav .nav-link {
+  font-family: var(--roboto);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1.5rem;
+  color: var(--title-color);
+}
+.header-area .main-menu .navbar-nav .active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header-area .main-menu .navbar-nav a {
+  transition: 0.3s;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.header-area .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+/* ? End Header Area */
+/* ******************************************************** */
+/* ! Start Main Area */
+.main {
+  height: 100vh;
+}
+.main .main-banner {
+  background: url(/img/banner/home-banner.png) no-repeat 0% 50%;
+}
+.main-banner .container .titles {
+  padding: 0 75px 70px 75px;
+}
+.main-banner .container .titles .title-text {
+  font-family: cursive;
+}
+.main-banner .container .titles h3 {
+  font-size: 40px;
+}
+.main-banner .container .titles h1 {
+  font-size: 50px;
+}
+.main-banner .container .titles h4 {
+  font-size: 30px;
+}
+.main-banner .container .titles h3::after {
+  /* h3 etiketinden sonra eklediğimiz düz çizgi */
+  content: "";
+  height: 2px;
+  width: 18vw;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-8px);
+}
+.buttons button {
+  background: none;
+  border: 2px solid rgb(144, 6, 161);
+  font-size: 18px;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s linear;
+  box-shadow: var(--box-shadow);
+  border-radius: 7px;
+}
+.buttons button:hover {
+  color: #fff;
+}
+.buttons button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-color1);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4 0.7);
+}
+.btn-1::before {
+  transform: scaleX(0);
+}
+.btn-1:hover::before {
+  transform: scaleX(1);
+}
+.btn-2::before {
+  transform: scaleY(0);
+}
+.btn-2:hover::before {
+  transform: scaleY(1);
+}
+/* ? End Main Area */
+/* ******************************************************** */
+
+/*! Start About Area */
+.about-area {
+  width: 90%;
+  margin: 0 auto;
+}
+.about-left img {
+  width: 600px;
+}
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.about-right h1 {
+  font-family: cursive;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.about-right .button .btn {
+  background: none;
+  border: 2px solid rgb(144, 6, 161);
+  font-size: 18px;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s linear;
+  box-shadow: var(--box-shadow);
+  border-radius: 7px;
+}
+.about-right .button .btn:hover {
+  color: #fff;
+}
+.about-right .button .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-color1);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4 0.7);
+}
+.about-right .button .btn::before {
+  transform: scaleY(0);
+}
+.about-right .button .btn:hover::before {
+  transform: scale(1);
+}
+/*? End About Area */
+/* ******************************************************** */
+
+/*! Start Brand */
+.brand-area {
+  padding: 15px;
+}
+
+.brand-area {
+}
+.brand-area .container .row {
+  display: flex;
+  flex-direction: row;
+}
+.row .brand {
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 25px 0;
+  margin: 10px 0;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.row .brand:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+}
+.row .brand img {
+  width: 50%;
+}
+.row .brand:hover img {
+  filter: brightness(0.15); /*görüntünün parlaklığını ayarlarız*/
+}
+.brand-area .container .right {
+  padding: 0 75px 0 75px;
+}
+.brand-area .container .right h2 {
+  color: rgb(113, 14, 206);
+  font-size: 35px;
+}
+.brand-area .container .right i {
+  font-size: 35px;
+}
+.brand-area .container .right .col-6 span {
+  display: block;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.brand-area .container .right .col-6 .years-area {
+  background: url(/img/client-info-bg.png) no-repeat;
+  background-size: contain;
+  padding: 10px 0;
+  width: 500px;
+  height: 18rem;
+  padding-left: 100px;
+  position: relative;
+}
+.brand-area .container .right .col-6 .years-area .years {
+  position: absolute;
+  background: rgba(226, 187, 220, 0.425);
+  width: 400px;
+  height: 400px;
+  margin-left: -95px;
+  z-index: -1;
+  border-radius: 5px;
+}
+.brand-area .container .right .col-6 .phone {
+  width: 300px;
+  height: 200px;
+  display: block;
+  gap: 10px;
+}
+.brand-area .container .right .col-6 .phone .call-now a:hover {
+  text-decoration: underline !important;
+}
+.brand-area .container .right .col-6 .phone .call-now span {
+  font-size: 20px;
+}
+.brand-area .container .right .col-6 .phone i {
+  margin-left: 20px;
+}
+
+/*? End Brand */
+/* ******************************************************** */
+
+/*! Start Services Area */
+.services-area .container .services h1 {
+  font-family: cursive;
+}
+.services-area .container .services p {
+  width: 700px;
+  padding: 15px !important;
+  text-align: center;
+  margin: 0 auto;
+}
+/*? End Services Area */
+/* ******************************************************** */
+
+/*! Start Services Card */
+.services-card .card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background: rgb(230, 230, 230);
+  border: none;
+}
+.services-card .card:hover {
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow);
+}
+
+.services-card .card img {
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+}
+/*? End Services Card */
+/* ******************************************************** */
+/*! Start Products Area */
+.products-area {
+  padding: 64px 0;
+}
+.products-area .button-group button {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.products-area .grid .our-products > .title h4 {
+  font: normal 700 25px/12px var(--roboto);
+}
+button:focus,
+button:active,
+button:hover .btn:active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+/*? Start Products Area */
+/* ******************************************************** */
+
+/* ! Start Subscribe */
+.subscribe-area {
+  width: 100%;
+  margin-top: 85px !important;
+}
+.subscribe-area .title-group,
+.subscribe-area .subscribe {
+  margin-top: 45px !important;
+}
+.subscribe-area .title-group h1 {
+  font-size: 60px;
+}
+.subscribe-area .title-group p {
+  font-size: 20px;
+}
+.subscribe-area .subscribe input {
+  padding: 5px 15px 5px 15px;
+  border: none;
+  box-shadow: var(--box-shadow);
+}
+
+/*? End Subscribe */
+/* ******************************************************** */
+/* ! Start Footer */
+footer{
+  
+}
+footer h2{
+  font-size: 28px;
+  font-family: "Oswold";
+}
+footer i{
+  font-size: 20px;
+  transition:transform .4s ease;
+}
+footer i:hover{
+  transform: scale(1.1);
+  color:rgb(146, 37, 179);
+
+}
+/*? End Footer */
+/* ******************************************************** */
